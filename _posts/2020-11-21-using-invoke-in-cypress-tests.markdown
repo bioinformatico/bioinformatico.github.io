@@ -2,7 +2,7 @@
 layout: post
 title:  "Using invoke() in Cypress tests"
 date:   2020-11-21 11:45:24 -0500
-categories: jekyll update
+categories: cypress
 ---
 ### Calling a function with invoke():
 
