@@ -23,7 +23,7 @@ cy.wrap(obj).invoke('sum', 2, 3).should('eq', 5);
 {% endhighlight %}
 
 
-Extracting attributes from HTML elements:
+### Extracting attributes from HTML elements:
 
 We can extract text from an HTML element. Let's say we have an h1 element:
 
