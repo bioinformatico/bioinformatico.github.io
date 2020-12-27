@@ -4,6 +4,11 @@ title:  "Using invoke() in Cypress tests"
 date:   2020-11-21 11:45:24 -0500
 categories: cypress
 ---
+
+<div class="post-image">
+  <img src="{{site.baseurl}}/assets/img/invoke.png">
+</div>
+
 ### Calling a function with invoke():
 
 Invoke calls a function on a yielded subject. In the next simple example, invoke executes the function in the object:
@@ -25,19 +30,19 @@ cy.wrap(obj).invoke('sum', 2, 3).should('eq', 5);
 
 ### Extracting attributes from HTML elements:
 
-We can extract text from an HTML element. Let's say we have an h1 element:
+We can extract text from an HTML element. Let's say we have an *h1* element:
 
 {% highlight html %}
 <h1>Cypress testing</h1>
 {% endhighlight %}
 
-Then we can confirm the text content:
+Then we can confirm the text it contains:
 
 {% highlight javascript %}
 cy.get('h1').invoke('text').should('contain', 'testing');
 {% endhighlight %}
 
-If we want to confirm that the src attribute really points to a proper url, we could use this code:
+If we want to confirm that the *src* attribute of an image points to a proper url, we could use this code:
 
 {% highlight javascript %}
 cy.get('img').eq(0).invoke('attr', 'src')
