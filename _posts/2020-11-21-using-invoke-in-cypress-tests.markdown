@@ -54,7 +54,15 @@ cy.get('img').eq(0).invoke('attr', 'src')
   });
 {% endhighlight %}
 
-If the wrapped object does not have a function, you can use its instead of invoke to extract a property:
+### Extract options list from a select:
+
+{% highlight javascript %}
+cy.get('.multiple-select')
+  .invoke('val')
+  .should('include', 'option1')
+{% endhighlight %}
+
+If the wrapped object does not have a function, you can use **its** instead of **invoke** to extract a property:
 
 {% highlight javascript %}
 const obj = {
