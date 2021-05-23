@@ -11,7 +11,7 @@ categories: cypress
 
 There are several tools to test and automate interactions with the browser. Selenium is probably the best known. Selenium had its debut in 2004, but since then a number of similar testing tools have appeared as alternatives. Some examples are: Puppeteer, Playwright, Nightwatch and Cypress. In this entry I will compare the use of Cypress and Playwright to test a user's sign up to a Web app.
 
-## Test sign up with Selenium and Pytest
+## Testing user's signup with Selenium and Pytest
 
 The code I use here was adapted from the Linkedin Learning course "Learning Selenium" by Meaghan Lewis where she tests a Web app hosted on Heroku. For Selenium I used the Python bindings, pytest and pytest-html to generate a report. I created a python virtual environment and installed the required packages:
 
@@ -76,7 +76,8 @@ An HTML report (report.html) is generated:
 </div>
 
 <br>
-## Test sign up with Cypress
+
+## Testing user's signup with Cypress
 
 The code used with cypress looks more straightforward and compact than the one using Selenium. Actually, the code runs faster than the code for Selenium-Pytest.
 
